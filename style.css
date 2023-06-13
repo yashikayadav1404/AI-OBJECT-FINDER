@@ -1,0 +1,138 @@
+body {
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.heading {
+  font-size: 23px;
+  width: 100%;
+  margin: 0px;
+}
+
+#status,
+#number_of_objects {
+  font-size: 18px;
+}
+
+canvas {
+  box-shadow: 5px 5px 5px lightgreyWhite;
+  border-radius: 8px;
+  margin-top: 180px;
+}
+
+
+.login-box {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+button {
+  margin-top: 50px;
+}
+
+.custom-btn {
+  color: #fff;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+/* 14 */
+.btn-14 {
+  position: relative;
+  color: #03e9f4;
+  border: none;
+  z-index: 2;
+}
+
+.btn-14:before,
+.btn-14:after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  border: 1px solid;
+
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.btn-14:before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #00aced;
+  border-left-color: #00aced;
+}
+
+.btn-14:after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #00aced;
+  border-right-color: #00aced;
+}
+
+.btn-14:hover:before,
+.btn-14:hover:after {
+  border-color: #00aced;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px #00aced, 0 0 5px #00aced inset;
+}
+
